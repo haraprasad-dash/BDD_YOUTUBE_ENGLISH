@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="8.837">
+<testcase classname="To check the Edit Profile  functionality for each user" name="Successful login with valid credentials" time="5.101">
+<failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException"><![CDATA[Given user is on PackAndGo login page.......................................pending
+When user enters the "pgAlmacho" and "freezeray" credentials................skipped
+Then user logged in and checks for Edit Profile.............................skipped
+]]></failure>
+</testcase>
+<testcase classname="To check the Edit Profile  functionality for each user" name="Successful login with valid credentials 2" time="3.455">
+<failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException"><![CDATA[Given user is on PackAndGo login page.......................................pending
+When user enters the "pgScarlet" and "freezeray" credentials................skipped
+Then user logged in and checks for Edit Profile.............................skipped
+]]></failure>
+</testcase>
+</testsuite>
