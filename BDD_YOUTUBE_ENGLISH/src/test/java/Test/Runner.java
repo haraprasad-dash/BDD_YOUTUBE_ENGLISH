@@ -14,7 +14,7 @@ import io.cucumber.junit.Cucumber;
 		//,
 		//plugin={"html:src\\test\\java\\Test\\rep.html","junit:src\\reports\\rep1.xml","json:\\src\\test\\java\\Test\\rep2.json"}
 		//tags= {"@EDUBankTeller"}
-		tags="@alert"
+		tags="@Data"
 		)
 
 public class Runner {}

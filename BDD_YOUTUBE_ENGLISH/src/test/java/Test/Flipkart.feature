@@ -27,9 +27,10 @@ Feature: To check the functionality of flipkart application
     |search element|
     |chocolate|
     
-    @Flipkart    
+    @Data   
     Scenario Outline: verify total no of counts of names present in datatable
     Given user is datatable  page using the "<url>"
+    When user selects dropdown and set to "25"
     #Then user can verify names present in table 
     #And system should take the snapshot of that page
     Then user can verify total no of "<count>"

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+
 //import org.apache.bcel.generic.Select;
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
@@ -23,6 +24,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import org.apache.logging.log4j.LogManager;
@@ -192,7 +194,21 @@ public class Flipkart {
 		
 	    //throw new io.cucumber.java.PendingException();
 	}
+	
+	@When("user selects dropdown and set to {string}")
+	public void user_selects_dropdown_and_set_to(String int1) throws InterruptedException {
+	    // Write code here that turns the phrase above into concrete actions
+		WebElement entity=driver.findElement(By.xpath("//select[@name='example_length']"));
+		Select selectto=new Select(entity);
+		System.out.println(int1);
+		
+		selectto.selectByValue("25");
+		Thread.sleep(2888);
+		
+	    //throw new io.cucumber.java.PendingException();
+	}
 
+	
 	@Then("user can verify names present in table")
 	public void user_can_verify_names_present_in_table() {
 	    // Write code here that turns the phrase above into concrete actions
