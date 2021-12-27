@@ -1,4 +1,4 @@
-package com.youtube.org.BDD_YOUTUBE_ENGLISH;
+package Test;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

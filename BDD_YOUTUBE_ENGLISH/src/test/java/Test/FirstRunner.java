@@ -11,10 +11,10 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features={"src\\test\\java\\Test"},
-		glue= {"src\\test\\java\\Test"},
+		//glue= {"src\\test\\java\\Test"},
 		//plugin={"html:src\\test\\java\\Test\\rep.html","junit:src\\reports\\rep1.xml","json:\\src\\test\\java\\Test\\rep2.json"}
-		plugin={"json:\\src\\test\\java\\Test\\cucumber.json"}
-		//tags= {"@EDUBankTeller"}
+		plugin={"json:\\src\\test\\java\\Test\\cucumber.json"},
+		tags= "@Data"
 		)
 
-public class Runner {}
+public class FirstRunner {}
