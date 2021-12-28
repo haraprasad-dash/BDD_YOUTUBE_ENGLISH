@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Build') {
          steps {
-            bat 'mvn -f /selenium-sample-master/pom.xml clean compile'
+            bat 'mvn -f C:/ProgramData/Jenkins/.jenkins/workspace/Groovy_Pipeline/selenium-sample-master/pom.xml clean compile'
          }
       }
       stage('Test'){
