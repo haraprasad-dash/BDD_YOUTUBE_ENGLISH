@@ -1,4 +1,4 @@
-package Test;
+package com.excel.lib.util;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
