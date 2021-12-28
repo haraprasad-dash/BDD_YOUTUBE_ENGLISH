@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-12-28T09:17:35.540Z",
+        "start_timestamp": "2021-12-28T19:08:25.962Z",
         "line": 39,
         "name": "verify total no of counts of names present in datatable",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10875282100,
+              "duration": 13391877700,
               "status": "passed"
             },
             "line": 32,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 2981896700,
+              "duration": 2994909300,
               "status": "passed"
             },
             "line": 33,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 6161348000,
+              "duration": 6147728500,
               "status": "passed"
             },
             "line": 36,

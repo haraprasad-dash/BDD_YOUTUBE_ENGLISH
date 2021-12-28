@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.657">
-<testcase classname="To check the functionality of flipkart application" name="verify total no of counts of names present in datatable" time="20.092">
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.053">
+<testcase classname="To check the functionality of flipkart application" name="verify total no of counts of names present in datatable" time="22.591">
 <system-out><![CDATA[Given user is datatable  page using the "https://datatables.net/"...........passed
 When user selects dropdown and set to "25"..................................passed
 Then user can verify total no of "57".......................................passed
