@@ -16,7 +16,7 @@ import io.cucumber.junit.Cucumber;
 		plugin={"pretty",
                 "json:BDD_YOUTUBE_ENGLISH/src/test/java/Test/result.json",
                 "junit:BDD_YOUTUBE_ENGLISH/src/test/java/Test/cucumber.xml"},
-		tags= "@Data"
+		tags= "@Flipcart"
 		)
 
 public class FirstRunner {}
