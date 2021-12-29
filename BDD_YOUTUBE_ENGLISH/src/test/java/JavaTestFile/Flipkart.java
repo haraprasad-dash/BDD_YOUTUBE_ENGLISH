@@ -1,4 +1,4 @@
-package com.excel.lib.util;
+package JavaTestFile;
 
 import static org.junit.Assert.assertEquals;
 

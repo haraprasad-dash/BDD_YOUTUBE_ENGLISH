@@ -1,4 +1,4 @@
-package com.excel.lib.util;
+package JavaTestFile;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
