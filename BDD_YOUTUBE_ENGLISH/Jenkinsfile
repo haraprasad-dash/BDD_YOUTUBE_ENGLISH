@@ -20,7 +20,7 @@ pipeline {
             steps {
                 cucumber buildStatus: "STABLE",
                 fileIncludePattern: "**/result.json",
-                jsonReportDirectory:'/BDD_YOUTUBE_ENGLISH/src/test/java/Test/result.json'
+                jsonReportDirectory:'C:/ProgramData/Jenkins/.jenkins/workspace/Groovy_Pipeline2/BDD_YOUTUBE_ENGLISH/BDD_YOUTUBE_ENGLISH/src/test/java/Test/result.json'
                 }
             }
         }
