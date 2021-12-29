@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
          steps {
-            bat 'mvn -B compile'
+            bat 'mvn -f  C:/ProgramData/Jenkins/.jenkins/workspace/Groovy_Pipeline2/BDD_YOUTUBE_ENGLISH/pom.xml clean compile'
          }
       }
       stage('Test'){
           steps{
-              bat 'mvn -B clean install'
+              bat 'mvn -f C:/ProgramData/Jenkins/.jenkins/workspace/Groovy_Pipeline2/BDD_YOUTUBE_ENGLISH/pom.xml clean install'
               cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
               }
       }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 cucumber buildStatus: "UNSTABLE",
                 fileIncludePattern: "**/cucumber.json",
-                jsonReportDirectory: '\\src\\test\\java\\Test\\cucumber.json'
+                jsonReportDirectory: '\\src\\test\\java\\Test\\result.json'
                 }
             }
         }
