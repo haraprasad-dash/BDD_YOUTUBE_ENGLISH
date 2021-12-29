@@ -18,9 +18,9 @@ pipeline {
         
          stage ('Cucumber Reports') {
             steps {
-                cucumber buildStatus: "UNSTABLE",
+                cucumber buildStatus: "STABLE",
                 fileIncludePattern: "**/cucumber.json",
-                jsonReportDirectory: '\\src\\test\\java\\Test\\result.json'
+                jsonReportDirectory: 'C:/ProgramData/Jenkins/.jenkins/workspace/Groovy_Pipeline2/BDD_YOUTUBE_ENGLISH/BDD_YOUTUBE_ENGLISH/src/test/java/Test/result.json'
                 }
             }
         }
