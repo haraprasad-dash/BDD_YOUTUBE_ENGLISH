@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="30.131">
+<testcase classname="To check the functionality of flipkart application" name="verify functionality of flipkart home page" time="18.345">
+<system-out><![CDATA[Given user is flipkart home sign on page....................................passed
+And user clicks close button in sign up page................................passed
+When user searches for "Iphone".............................................passed
+Then user can verify no of results coming...................................passed
+And verify the alternate text at iphone13...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the functionality of flipkart application" name="verify hidden dropdown values in  home page" time="11.517">
+<system-out><![CDATA[Given user is flipkart home sign on page....................................passed
+And user clicks close button in sign up page................................passed
+When user searches for "chocolate"..........................................passed
+Then user can verify no of results coming...................................passed
+And user navigates to parent page to search.................................passed
+And user navigates to child webpage to search...............................passed
+And user is doing pagination in child page..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

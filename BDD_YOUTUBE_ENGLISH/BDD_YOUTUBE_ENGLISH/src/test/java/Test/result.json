@@ -1,0 +1,221 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-31T14:33:45.229Z",
+        "line": 13,
+        "name": "verify functionality of flipkart home page",
+        "description": "",
+        "id": "to-check-the-functionality-of-flipkart-application;verify-functionality-of-flipkart-home-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 677000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JavaTestFile.Flipkart.driver_close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13058000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is flipkart home sign on page",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_is_flipkart_home_sign_on_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2146000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks close button in sign up page",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_clicks_close_button_in_sign_up_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2259000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches for \"Iphone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Iphone\"",
+                  "offset": 18
+                }
+              ],
+              "location": "JavaTestFile.Flipkart.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user can verify no of results coming",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_can_verify_no_of_results_coming()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify the alternate text at iphone13",
+            "match": {
+              "location": "JavaTestFile.Flipkart.verify_the_alternate_text_at_iphone13()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Flipkart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-31T14:34:03.588Z",
+        "line": 28,
+        "name": "verify hidden dropdown values in  home page",
+        "description": "",
+        "id": "to-check-the-functionality-of-flipkart-application;verify-hidden-dropdown-values-in--home-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 668000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JavaTestFile.Flipkart.driver_close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6302000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is flipkart home sign on page",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_is_flipkart_home_sign_on_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2179000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks close button in sign up page",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_clicks_close_button_in_sign_up_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2181000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user searches for \"chocolate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chocolate\"",
+                  "offset": 18
+                }
+              ],
+              "location": "JavaTestFile.Flipkart.user_searches_for(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user can verify no of results coming",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_can_verify_no_of_results_coming()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user navigates to parent page to search",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_navigates_to_parent_page_to_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user navigates to child webpage to search",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_navigates_to_child_webpage_to_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user is doing pagination in child page",
+            "match": {
+              "location": "JavaTestFile.Flipkart.user_is_doing_pagination_in_child_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Flipkart"
+          }
+        ]
+      }
+    ],
+    "name": "To check the functionality of flipkart application",
+    "description": "",
+    "id": "to-check-the-functionality-of-flipkart-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Flipkart.feature",
+    "tags": []
+  }
+]
