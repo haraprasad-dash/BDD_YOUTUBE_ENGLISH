@@ -1,4 +1,6 @@
 package com.ebanking.testCases;
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
@@ -7,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import com.vimalselvam.cucumber.listener.Reporter;
 
 import io.cucumber.java.Before;
 
@@ -22,8 +26,10 @@ import io.cucumber.junit.Cucumber;
 
 //@RunWith(Cucumber.class)
 @io.cucumber.testng.CucumberOptions(
-		features={"D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\src\\test\\java\\Features"},
+		features={"D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\src\\test\\resources\\Features"},
 		//glue= {"D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\src\\test\\java\\com\\ebanking\\testCases"},
+				//plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
+		
 		//plugin={"html:src\\test\\java\\Test\\rep.html","junit:src\\reports\\rep1.xml","json:\\src\\test\\java\\Test\\rep2.json"}
 		/*plugin={"pretty",
                 "json:BDD_YOUTUBE_ENGLISH/src/test/java/Test/result.json",
@@ -32,23 +38,24 @@ import io.cucumber.junit.Cucumber;
 		)
 
 public class FirstRunner extends io.cucumber.testng.AbstractTestNGCucumberTests  {
-public static WebDriver driver;
-Logger logger;
-TC_LoginPage_1 test;
-//@Before("@Login")
-@BeforeClass
-	public  void setup() {
-		System.setProperty("webdriver.chrome.driver","D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\Drivers\\chromedriver.exe");
-		//System.getProperty("user.dir")+"//Drivers//chromedriver.exe"
-		driver= new ChromeDriver();
-		//return driver;
-		//test=new TC_LoginPage_1(driver,logger);
-		
-	}
+//public static WebDriver driver;
+//Logger logger;
+//TC_LoginPage_1 test;
+////@Before("@Login")
+//@BeforeClass
+//	public  void setup() {
+//		System.setProperty("webdriver.chrome.driver","D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\Drivers\\chromedriver.exe");
+//		//System.getProperty("user.dir")+"//Drivers//chromedriver.exe"
+//		driver= new ChromeDriver();
+//		//return driver;
+//		//test=new TC_LoginPage_1(driver,logger);
+//		
+//	}
 	//test=new TC_LoginPage_1(driver);
 	
 //	@AfterClass
 //	public void TearDown() {
 //		driver.quit();
 //	}
+	 
 }

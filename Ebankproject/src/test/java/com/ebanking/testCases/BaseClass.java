@@ -1,5 +1,7 @@
 package com.ebanking.testCases;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,11 +12,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class BaseClass {
 	
-	WebDriver driver;
+	public static WebDriver driver;
 	String Username;
 	String Password;
 	String Url;
@@ -44,9 +48,21 @@ public class BaseClass {
 	public WebDriver getDriver() {
 		return driver;
 	}
-	public void setDriver(WebDriver driver) {
-		this.driver = driver;
+	public static void setDriver(WebDriver driver1) {
+		driver = driver1;
 	}
+//	public static byte[] takeScreenShot() {
+//		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//	}
+	@AfterStep
+	public void afterScenario(Scenario scenario) {
+		//scenario.attach(Util.takeScreenShot(), "image/png", scenario.getName());
+		if (scenario.isFailed())
+		{
+			scenario.attach(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png", scenario.getName());
+		}
+	}
+	
 	
 
 }

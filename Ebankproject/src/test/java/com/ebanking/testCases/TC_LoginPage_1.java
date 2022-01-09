@@ -11,6 +11,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 //import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.Assertion;
+
 import com.ebanking.utilities.ReadConfig;
 import com.ebanking.pageObjets.LoginPage;
 
@@ -28,6 +30,7 @@ public static LoginPage lp;
 public static Logger logger;
 public static Actions action;
 public static Alert alert;
+public static Assertion asserter;
 BaseClass base;
 public static ReadConfig read;
 
@@ -123,5 +126,6 @@ public void user_can_verify_the_title() {
     System.out.println(base.driver.getTitle());
 	//throw new io.cucumber.java.PendingException();
     logger.info("title verification");
+
 }
 }

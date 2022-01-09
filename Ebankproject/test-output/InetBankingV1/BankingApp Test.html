@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  BankingApp Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>BankingApp Test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 09 20:21:43 IST 2022</td>
+<td>Started on:</td><td>Sun Jan 09 20:04:02 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20455 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24412 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,32 +76,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.ebanking.testCases.FirstRunner.runScenario()'><b>runScenario</b><br>Test class: com.ebanking.testCases.FirstRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify login of ebanking home page", "Optional[To check the login functionality of banking application]"</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertFalse(Assert.java:67)
-	at org.testng.Assert.assertFalse(Assert.java:77)
-	at org.testng.asserts.Assertion$4.doAssert(Assertion.java:116)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertFalse(Assertion.java:112)
-	at com.ebanking.testCases.TC_LoginPage_1.user_can_verify_the_title(TC_LoginPage_1.java:130)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.testng.asserts.Assertion.assertFalse(boolean)&quot; because &quot;com.ebanking.testCases.TC_LoginPage_1.asserter&quot; is null
+	at com.ebanking.testCases.TC_LoginPage_1.user_can_verify_the_title(TC_LoginPage_1.java:129)
 	at ?.user can verify the title(file:///D:/git/BDD_YOUTUBE_ENGLISH/Ebankproject/src/test/resources/Features/LoginPage.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1682828548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1682828548'><pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertFalse(Assert.java:67)
-	at org.testng.Assert.assertFalse(Assert.java:77)
-	at org.testng.asserts.Assertion$4.doAssert(Assertion.java:116)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertFalse(Assertion.java:112)
-	at com.ebanking.testCases.TC_LoginPage_1.user_can_verify_the_title(TC_LoginPage_1.java:130)
+</pre></div><a href='#' onClick='toggleBox("stack-trace784961589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace784961589'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.testng.asserts.Assertion.assertFalse(boolean)&quot; because &quot;com.ebanking.testCases.TC_LoginPage_1.asserter&quot; is null
+	at com.ebanking.testCases.TC_LoginPage_1.user_can_verify_the_title(TC_LoginPage_1.java:129)
 	at ?.user can verify the title(file:///D:/git/BDD_YOUTUBE_ENGLISH/Ebankproject/src/test/resources/Features/LoginPage.feature:9)
 </pre></div></td>
-<td>19</td>
-<td>com.ebanking.testCases.FirstRunner@3590fc5b</td></tr>
+<td>23</td>
+<td>com.ebanking.testCases.FirstRunner@8297b3a</td></tr>
 </table><p>
 </body>
 </html>

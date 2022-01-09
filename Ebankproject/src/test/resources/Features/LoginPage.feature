@@ -11,4 +11,3 @@ Feature: To check the login functionality of banking application
     Examples:
     |url|username|password|
     |http://demo.guru99.com/V1/index.php|mngr377490|EzevEqE|
-    #YbetEbE,mngr378847

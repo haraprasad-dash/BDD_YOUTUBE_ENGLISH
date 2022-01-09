@@ -6,7 +6,6 @@
       <class name="com.ebanking.testCases.FirstRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="setup"/>
           <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
