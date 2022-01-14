@@ -28,7 +28,7 @@ import io.cucumber.junit.Cucumber;
 @io.cucumber.testng.CucumberOptions(
 		features={"D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\src\\test\\resources\\Features"},
 		//glue= {"D:\\git\\BDD_YOUTUBE_ENGLISH\\Ebankproject\\src\\test\\java\\com\\ebanking\\testCases"},
-				//plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
+				//plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		
 		//plugin={"html:src\\test\\java\\Test\\rep.html","junit:src\\reports\\rep1.xml","json:\\src\\test\\java\\Test\\rep2.json"}
 		/*plugin={"pretty",

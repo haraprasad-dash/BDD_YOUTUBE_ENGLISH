@@ -34,7 +34,7 @@ public class BaseClass {
 		driver.quit();
 	}
 	public boolean isAlertPresent(WebDriver driver){
-		this.driver=driver;
+		//this.driver=driver;
 	    boolean foundAlert = false;
 	    WebDriverWait wait = new WebDriverWait(driver, 5 /*timeout in seconds*/);
 	    try {
